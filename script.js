@@ -3,12 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentDate = new Date().toISOString().slice(0, 10);
   document.getElementById('date').value = currentDate;
 
-  //Initiate popup
-  let popup = document.getElementById("popup");
-
   //Event open popup (done)
   function openPopup() {
-    popup.classList.add("open-popup");
+    document.getElementById("popup").style.display = "block";
   }
   
   //Event open popup (error)
@@ -41,8 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Close Popup (done)
 function closePopup() {
-  popup.classList.remove("open-popup");
-  //Reload page
+  document.getElementById("popup").style.display = "none";
   location.reload();
 }
 //Close Error Popup
