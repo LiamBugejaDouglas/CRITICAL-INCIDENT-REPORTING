@@ -4,15 +4,15 @@
   <meta charset="utf-8" />
   <title>Critical Incident Report</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="../CSS/style.css"/>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
-  <link rel="icon" type="image/x-icon" href="Images/ha.ico">
+  <script src="../JavaScript/script.js"></script>
+  <link rel="icon" type="image/x-icon" href="../Images/ha.ico">
 <body>
-<img src="Images/cropped-site-logo.png" alt="Logo" class="logo">
+<img src="../Images/cropped-site-logo.png" alt="Logo" class="logo">
   <div class="container">
     <h1 class="form-title">Critical Incident Report</h1>
-    <form action="form_db.php" id="incidentForm" method="post">
+    <form action="../Database/form_db.php" id="incidentForm" method="post">
       <div class="main-user-info">
         <div class="user-input-box">
           <label for="date">Date:</label>
@@ -82,13 +82,13 @@
         <button type="submit" class="btn" onclick="openPopup()" value="Submit">Submit</button>
       </div>
       <div class="popup" id="popup">
-        <img src="Images/404-tick.png">
+        <img src="../Images/404-tick.png">
         <h2>Thank You!</h2>
         <p>Critical Incident Report has been successfully submitted. Thanks!</p>
         <button type="button" onclick="closePopup()">OK</button>
       </div>
     <div class="error-popup" id="error-popup">
-      <img src="Images/error-404.png">
+      <img src="../Images/error-404.png">
       <h2>Error!</h2>
       <p>Competency or Performance Dimension for this user has already been entered today.</p>
       <button type="button" onclick="closeErrorPopup()">OK</button>

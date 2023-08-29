@@ -5,7 +5,7 @@
 
     //Check if user is correct
     if (!isset($_SESSION['username'])) {
-        header("Location: index.php");
+        header("Location: ../FrontEnd/index.php");
         exit();
     }
     

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Perform the AJAX request
     $.ajax({
       type: 'POST',
-      url: 'form_db.php',
+      url: '../Database/form_db.php',
       data: $(this).serialize(),
       success: function(response) {
         if (response === 'done') {
