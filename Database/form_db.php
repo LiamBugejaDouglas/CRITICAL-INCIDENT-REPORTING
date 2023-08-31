@@ -1,13 +1,10 @@
 <?php
 
-    //Start sessiom
+    // Start session first
     session_start();
 
-    //Check if user is correct
-    if (!isset($_SESSION['username'])) {
-        header("Location: ../FrontEnd/index.php");
-        exit();
-    }
+    // Get username
+    $username = $_SESSION['username'];
     
     //Get value names from from.php
     $date = $_POST['date'];
@@ -23,9 +20,6 @@
 
     //Connect to databse
     include "db_conn.php";
-
-    //Get username
-    $username = $_SESSION['username'];
 
     //Prepare  to insert in databse (insert into ["name of databse"], value names + values(?))
     $stmt = $conn->prepare("insert into test(date,fullName,jobPosition,natureOfIncident,dimension,situationDescription,employeesBehavior,impactOnStakeholders,

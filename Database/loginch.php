@@ -8,6 +8,11 @@
     //Get Data
     $username = $_POST['user'];
     $password = $_POST['password'];
+
+    if ($password === "12345") {
+        header("Location: ../FrontEnd/index.php?error=Please change your password");
+        exit();
+    }
     
     // Query the database to check credentials
     $query = "SELECT * FROM users WHERE username='$username'";
@@ -17,7 +22,7 @@
     if(mysqli_num_rows($result) === 1){
         $row = mysqli_fetch_assoc($result);
         if($row['password'] === $password){
-            $_SESSION['user'] = $row['username'];
+            $_SESSION['username'] = $row['username'];
             $_SESSION['password'] = $row['password'];
             //If correct send to form site
             header("Location: ../FrontEnd/form.php");

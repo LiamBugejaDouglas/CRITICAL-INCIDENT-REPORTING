@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// Check if user is logged in
+if (!isset($_SESSION['username'])) {
+    header("Location: ../FrontEnd/index.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
