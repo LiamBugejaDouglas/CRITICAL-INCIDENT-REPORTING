@@ -296,3 +296,21 @@ body{
     background-color: #b30000;
     color: rgb(255, 255, 255);
 }
+
+.download-excel-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2691d9; 
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .download-excel-btn:hover {
+    background-color: #1e74c1;
+  }

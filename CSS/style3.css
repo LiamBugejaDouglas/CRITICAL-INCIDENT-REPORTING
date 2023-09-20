@@ -148,10 +148,9 @@ input[type="submit"]:hover{
 /* Password requirements container styles */
 .password-requirements {
   position: absolute;
-  top: 50%;
-  right: 20%; /* Adjust the left positioning as needed */
-  transform: translate(-50%, -50%);
-  width: 250px; /* Adjust the width as needed */
+  top:30%;
+  width: 15%; 
+  right: 12%; 
   padding: 20px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;

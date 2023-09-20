@@ -102,6 +102,7 @@ if (!isset($_SESSION['username'])) {
       <p>Competency or Performance Dimension for this user has already been entered today.</p>
       <button type="button" onclick="closeErrorPopup()">OK</button>
     </div>
+    <a href="../Database/excel.php" target="_blank" class="download-excel-btn">Download Excel</a>
     </form>
     </div>
 </div>
